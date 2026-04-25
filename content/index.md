@@ -15,7 +15,7 @@ I am **Musung Kang** (강무성), a Ph.D. candidate (post-coursework) at the **D
 |---|---|---|
 | present | Ph.D. candidate (post-coursework) | Seoul National University, Department of Mathematical Sciences |
 
-I am supported by the **Hyunsong Foundation Scholarship** (5-year graduate fellowship), to whom I am grateful for the freedom to pursue this research.
+I am supported by the **Hyunsong Foundation Scholarship** (5-year graduate scholarship), to whom I am grateful for the freedom to pursue this research.
 
 ## Talks
 
