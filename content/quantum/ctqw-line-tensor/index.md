@@ -158,9 +158,15 @@ A few directions worth their own posts:
 - **Perfect / pretty-good state transfer on $L(G_1 \otimes G_2)$.** Are there pairs $(e, f)$ of edges in the tensor product for which $|U(t)_{ef}| = 1$ at some $t$? Cycles and Cartesian powers of $K_2$ are the classical playground; tensor products are less explored.
 - **A categorical view.** The line-graph construction is a functor on a suitable category of graphs, and $G \mapsto e^{itA_G}$ is morally a *functorial* construction once one fixes the category of finite-dimensional Hilbert spaces and unitaries. The tensor product gives this functor a natural monoidal structure, and the failure of full functoriality on disconnected products is what Weichsel's theorem is detecting. I want to spell this out properly in a later post — there is an honest categorical statement hiding behind the picture.
 
-## Code and reproducibility
+## Run it
 
-The full notebook used to produce these figures lives in this blog's [[notes/notebooks/quantum-walks-notebook|notebooks folder]] (Colab-compatible). The four key functions are short; everything else is plotting.
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/soorig/research-blog-qc/blob/main/content/notes/notebooks/quantum_walks_on_graphs.ipynb)
+
+## Download or view statically
+
+- [Download `quantum_walks_on_graphs.ipynb`](./quantum_walks_on_graphs.ipynb)
+- [View rendered on GitHub](https://github.com/soorig/research-blog-qc/blob/main/content/notes/notebooks/quantum_walks_on_graphs.ipynb)
+- [Render via nbviewer](https://nbviewer.org/github/soorig/research-blog-qc/blob/main/content/notes/notebooks/quantum_walks_on_graphs.ipynb)
 
 If you reproduce these and find that one of the antipodal entries computes to something tidier than $\frac{5}{18}$ for the $C_6$ case — or you want to add a graph to the audience-figure script — let me know.
 
