@@ -1,6 +1,6 @@
 ---
 title: "Counting trees with a quantum walk: a preview of my preprint"
-date: 2026-05-02
+date: 2026-05-04
 tags:
   - quantum-computing
   - quantum-walks
