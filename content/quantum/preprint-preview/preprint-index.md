@@ -9,17 +9,25 @@ tags:
   - matrix-tree-theorem
   - preprint
 draft: false
-description: "An informal walkthrough of the main result of my upcoming preprint on Schur states, average mixing, and spanning-tree counts."
+description: "An informal walkthrough of a spanning-tree counting result for quantum walks on line graphs. Kept for the record, the counting theorem has since been withdrawn as erroneous."
 aliases:
   - /quantum/preprint-preview
   - /schur-states
 ---
 
+> ### Correction, September 2026
+>
+> **The counting theorem described in this post is wrong, and I have withdrawn it.**
+>
+> The preprint was rewritten from scratch and is now [arXiv:2605.01953v2](https://arxiv.org/abs/2605.01953), *Schur States and Many-Body Quantum Walks on Line Graphs*. That version keeps the Schur-state encoding and rebuilds the setting on bosonic and fermionic Fock spaces over $\ell^2(E_H)$. It explicitly withdraws three things as erroneous, the Hermitian Schur-state definition, the Schur-product identity, and the spanning-tree counting results, which are exactly what this post is about. No result of the first version is used in the second.
+>
+> I am leaving the post up rather than deleting it, because a wrong result that someone may have read is better corrected in place than quietly removed. Read what follows as a record of what I believed in May 2026, not as mathematics to rely on.
+
 ## What this post is
 
-This is an informal companion to my upcoming preprint, *Schur States, Average Mixing, and Counting Trees on Line Graphs' CTQW.* The actual paper has all the proofs, hypotheses, and corner cases you would expect from a journal submission. This post is the version I would tell a friend over coffee — what the question is, what the answer looks like, and why the answer is not obvious.
+This was an informal companion to a preprint in preparation, *Schur States, Average Mixing, and Counting Trees on Line Graphs' CTQW*, written as the version I would tell a friend over coffee, what the question is, what the answer looks like, and why the answer is not obvious.
 
-I'm presenting this work at the [[index|Hyunsong Foundation Scholar Presentation]] on **May 7, 2026**. If you are coming to that talk, this post is the warm-up. If you are reading this later, the preprint is on its way to the [arXiv](https://arxiv.org/) and a link will appear here once it lands.
+I presented this work at the [[index|Hyunsong Foundation Scholar Presentation]] on **May 7, 2026**. See the correction above for where the argument fails.
 
 ## The question in one sentence
 
@@ -172,7 +180,7 @@ If that bridge has more to say, it should say it through the open questions abov
 
 ## Files
 
-The full preprint with all proofs, hypothesis-checking, and bibliographic references will be linked here once posted to arXiv. In the meantime, slides from the May 7 talk will be added.
+The surviving part of this work is [arXiv:2605.01953v2](https://arxiv.org/abs/2605.01953), *Schur States and Many-Body Quantum Walks on Line Graphs*. It does not contain the counting result above.
 
 ## References
 

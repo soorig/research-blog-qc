@@ -124,7 +124,7 @@ Three things, in order of how surprising they were to me when I first ran this:
 Two natural next steps for the blog:
 
 - **Spectral source of the localization.** The eigenvectors of $A_{L(\Gamma_{\text{punc}})}$ that concentrate near the missing vertex have specific support, and the size of $\widehat{M}_\infty(q, q) - \widehat{M}_{\text{full}}(q, q)$ should be readable from those eigenvectors directly.
-- **Connection to the Schur-state framework.** The instantaneous Schur state $S^e(t)$ for a pure edge state encodes all of $M(t)_{e,\cdot}$, and $A(e) = \overline{S^e} \circ S^e$ is precisely the column of $M(t)$ that we have been animating, reshaped onto $\Gamma$. Time-averaging gives $\widehat{A(e)}_{v,w} = \widehat{M}_\infty(e_{vw}, e)$, which is the column of $\widehat{M}_\infty$ as edge weights on $\Gamma$. This is the framework in which the random-weight result $tn(\Gamma, 1/m) = m^{-(n-1)}\, tn(\Gamma)$ that I'll present at the upcoming Hyunsong talk lives.
+- **Connection to the Schur-state framework.** The instantaneous Schur state $S^e(t)$ for a pure edge state encodes all of $M(t)_{e,\cdot}$, and $A(e) = \overline{S^e} \circ S^e$ is precisely the column of $M(t)$ that we have been animating, reshaped onto $\Gamma$. Time-averaging gives $\widehat{A(e)}_{v,w} = \widehat{M}_\infty(e_{vw}, e)$, which is the column of $\widehat{M}_\infty$ as edge weights on $\Gamma$. This is the framework in which the random-weight result $tn(\Gamma, 1/m) = m^{-(n-1)}\, tn(\Gamma)$ that I presented at the Hyunsong talk in May 2026 lives. See the [[quantum/preprint-preview/preprint-index|correction notice]] on the companion post before relying on the tree-counting side of that framework.
 
 ## Code and reproducibility
 
