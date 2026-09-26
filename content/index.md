@@ -21,7 +21,7 @@ I am supported by the **Hyunsong Foundation Scholarship** (5-year graduate schol
 
 ## Talks
 
-- **May 7, 2026** — Hyunsong Foundation Scholar Presentation, on average mixing and spanning-tree counts for quantum walks on line graphs. See [[quantum/preprint-preview/preprint-index|the companion post]].
+- **May 7, 2026** — [3rd KIAS Graduate Student Meeting in Mathematics](https://sites.google.com/view/gsm-3/), KIAS, Seoul. Contributed talk on average mixing for quantum walks on line graphs. The [[quantum/preprint-preview/preprint-index|companion post]] is still up, with a correction notice, since the spanning-tree result presented there has been withdrawn.
 
 ## Three working principles
 

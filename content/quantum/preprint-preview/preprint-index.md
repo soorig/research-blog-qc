@@ -39,7 +39,7 @@ No spanning trees are counted anywhere in it.
 
 This was an informal companion to a preprint in preparation, *Schur States, Average Mixing, and Counting Trees on Line Graphs' CTQW*, written as the version I would tell a friend over coffee, what the question is, what the answer looks like, and why the answer is not obvious.
 
-I presented this work at the [[index|Hyunsong Foundation Scholar Presentation]] on **May 7, 2026**. See the correction above for where the argument fails.
+I presented this work at the [3rd KIAS Graduate Student Meeting in Mathematics](https://sites.google.com/view/gsm-3/), held at KIAS on **May 7, 2026**. See the correction above for where the argument fails.
 
 ## The question in one sentence
 
