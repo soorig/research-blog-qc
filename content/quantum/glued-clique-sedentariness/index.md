@@ -148,5 +148,5 @@ Every number quoted above was checked numerically by [`glued_clique_figures.py`]
 
 ## Related
 
-- [[quantum/preprint-preview/preprint-index|Counting trees with a quantum walk]], on average mixing on line graphs
+- [[quantum/preprint-preview/preprint-index|Counting trees with a quantum walk]], an earlier post on average mixing on line graphs, kept up with a correction notice
 - [[quantum/average-mixing-paths/index|Uniform average mixing on paths]], the other manuscript currently under review

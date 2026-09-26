@@ -1,7 +1,9 @@
 ---
-title: "Counting trees with a quantum walk: a preview of my preprint"
+title: "Counting trees with a quantum walk: a retracted preview"
 date: 2026-05-04
 tags:
+  - retracted
+  - correction
   - quantum-computing
   - quantum-walks
   - line-graphs
@@ -22,6 +24,16 @@ aliases:
 > The preprint was rewritten from scratch and is now [arXiv:2605.01953v2](https://arxiv.org/abs/2605.01953), *Schur States and Many-Body Quantum Walks on Line Graphs*. That version keeps the Schur-state encoding and rebuilds the setting on bosonic and fermionic Fock spaces over $\ell^2(E_H)$. It explicitly withdraws three things as erroneous, the Hermitian Schur-state definition, the Schur-product identity, and the spanning-tree counting results, which are exactly what this post is about. No result of the first version is used in the second.
 >
 > I am leaving the post up rather than deleting it, because a wrong result that someone may have read is better corrected in place than quietly removed. Read what follows as a record of what I believed in May 2026, not as mathematics to rely on.
+
+## What replaced it
+
+The rewritten paper, [arXiv:2605.01953v2](https://arxiv.org/abs/2605.01953), keeps the starting observation and throws away the conclusion. A one-particle continuous-time quantum walk on the line graph $\ell H$ has one mode for each edge of $H$, and the matrix encoding of an edge-amplitude vector, its **Schur state**, survives. What changes is that the encoding is now pinned down rather than chosen. It has to be complex symmetric if it is to be complex linear and to retain the global phase, it is normalized by $1/\sqrt2$, and it is unitary for the Frobenius inner product. The canonical tensor lift to the categorical product of graphs fixes the convention completely, since among the unimodular phase variants the symmetric choice is the only one that survives and every relaxed variant collapses to a sign.
+
+The labelled tensor-power description is gone, replaced by the bosonic and fermionic Fock spaces over $\ell^2(E_H)$, with the occupation-number basis, the second-quantized line-graph Hamiltonian, permanent and determinant formulae for many-particle transition amplitudes, and the one-particle reduced density matrix.
+
+The one piece of graph theory left is the even-Eulerian criterion, which is the zero-sum $2$-flow criterion of Wang and Hu. Through the incidence identity it produces a real equimodular full-support $-2$ eigenmode of $A(\ell H)$, and hence bosonic condensates of energy $-2N$ that are uniform over the edges of $H$. The fermionic case is stated separately so that the Pauli constraint stays explicit.
+
+No spanning trees are counted anywhere in it.
 
 ## What this post is
 

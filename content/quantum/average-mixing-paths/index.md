@@ -146,5 +146,5 @@ The figures on this page were produced by the two scripts in this folder, [`avg_
 
 ## Related
 
-- [[quantum/preprint-preview/preprint-index|Counting trees with a quantum walk]], on average mixing on line graphs
+- [[quantum/preprint-preview/preprint-index|Counting trees with a quantum walk]], an earlier post on average mixing on line graphs, kept up with a correction notice
 - [[quantum/glued-clique-sedentariness/index|Sedentariness on glued-clique graphs]], a manuscript currently under review
