@@ -7,7 +7,7 @@ This blog is for writing contents about mathematical computing and physics in th
 
 ## About me
 
-I am **Musung Kang** (강무성), a researcher in discrete mathematics and mathematical physics, a Ph.D. candidate at the **Department of Mathematical Sciences, Seoul National University**, advised by **Woong Kook**.
+I am **Musung Kang** (강무성), a researcher in discrete mathematics, quantum computing and mathematical physics, a Ph.D. candidate at the **Department of Mathematical Sciences, Seoul National University**, advised by **Woong Kook**.
 
 My research interests include **discrete harmonic analysis**, **spectral graph theory**, and **continuous-time quantum walks**. I study algebraic structures of graphs, with particular interest in adjacency matrices and convex geometry. My recent work has been strongly influenced by Chris Godsil's approach to algebraic combinatorics and quantum walks.
 
