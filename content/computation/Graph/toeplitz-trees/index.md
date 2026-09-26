@@ -141,7 +141,7 @@ The single missing order at $25$, sitting above eleven orders that do work, is t
 
 ## Check it yourself
 
-Everything numerical above comes from one short script in this folder, [`toeplitz_tree_census.py`](toeplitz_tree_census.py), which enumerates tree length sets by the move of Section 1 rather than by testing subsets. It confirms independently that
+Everything numerical above comes from one short script in this folder, [`toeplitz_tree_census.py`](toeplitz_tree_census.py), which enumerates tree length sets by the move of Section 1 rather than by testing subsets, and which also draws the figure above, the same one the manuscript uses. It confirms independently that
 
 - $N(n)$ for $n = 1,\dots,12$ is $1, 1, 1, 2, 1, 3, 2, 4, 2, 5, 2, 9$, agreeing with a brute-force search over all jump sets for every $n \le 18$,
 - every length set produced is superincreasing,

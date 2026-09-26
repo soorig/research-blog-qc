@@ -79,40 +79,64 @@ print("saved N(n) up to 220")
 
 
 # ---------------------------------------------------------------
-# Figure: the census plotted in base-2 log-log
+# Figure: the census on base-2 logarithmic axes.
+# This is the same figure, and the same code, as fig-census.pdf in the
+# manuscript working folder, rendered here to PNG for the post.
 # ---------------------------------------------------------------
 
-import os, json
+from collections import defaultdict
 HERE = os.path.dirname(os.path.abspath(__file__))
+sys.setrecursionlimit(100000)
+
+XMAX = 260
+
+def census(xmax):
+    """N(n) for n <= xmax, by the move L -> (L\\{s}) u {ord L}, s in L u {0}."""
+    Nn = defaultdict(int)
+    def rec(L, o):
+        Nn[o] += 1
+        for s in list(L) + [0]:
+            L2 = tuple(sorted((set(L) - {s}) | {o}, reverse=True))
+            o2 = 1 + sum(L2)
+            if o2 <= xmax:
+                rec(L2, o2)
+    rec((), 1)
+    return Nn
+
+N = census(XMAX)
 import numpy as np, matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 from matplotlib.ticker import FixedLocator, NullFormatter
 
-N = {int(k): v for k, v in json.load(open(os.path.join(HERE, "Nn.json"))).items()}
+matplotlib.rcParams.update({
+    "font.family": "serif", "font.serif": ["DejaVu Serif"],
+    "mathtext.fontset": "cm", "font.size": 9,
+    "pdf.fonttype": 42, "axes.linewidth": 0.7,
+})
+
 ns = np.array([n for n in sorted(N) if n >= 2]); vals = np.array([N[n] for n in ns])
 run = np.maximum.accumulate(vals)
 
-fig, ax = plt.subplots(figsize=(10, 5.0))
+fig, ax = plt.subplots(figsize=(5.6, 3.3))
 ax.set_xscale("log", base=2); ax.set_yscale("log", base=2)
 
-# reference power laws, straight lines of integer slope in base-2 log-log
 xr = np.array([2.0, 300.0])
-for p, style in ((1, (0, (6, 4))), (2, (0, (2, 3)))):
-    ax.plot(xr, xr**p, color="#999999", lw=1.1, ls=style, zorder=1)
-ax.text(300, 300**1, r"  $n$", color="#777777", fontsize=10, va="center")
-ax.text(74, 74**2 * 0.75, r"$n^{2}$", color="#777777", fontsize=10, ha="left")
+ax.plot(xr, xr, color="0.6", lw=0.8, ls=(0, (6, 4)), zorder=1)
+ax.plot(xr, xr**2, color="0.6", lw=0.8, ls=(0, (2, 3)), zorder=1)
+ax.text(300, 300, r"  $n$", color="0.45", fontsize=8, va="center")
+ax.text(70, 70**2 * 0.7, r"$n^{2}$", color="0.45", fontsize=8)
 
-ax.plot(ns, vals, lw=0.7, color="#cccccc", zorder=2)
-ax.scatter(ns, vals, s=9, color="#3b6ea5", zorder=3, label=r"$N(n)$")
-ax.plot(ns, run, lw=1.7, color="#c0392b", zorder=4, label="running maximum of $N$")
+ax.plot(ns, vals, lw=0.5, color="0.82", zorder=2)
+ax.scatter(ns, vals, s=4.5, color="0.25", zorder=3, label=r"$N(n)$")
+ax.plot(ns, run, lw=1.2, color="black", zorder=4, label=r"$\max_{m\leq n}N(m)$")
 
-ax.annotate(r"$n=240,\ N=1781$", xy=(240, 1781), xytext=(150, 5200), fontsize=9.5, color="#3b6ea5",
-            arrowprops=dict(arrowstyle="->", color="#3b6ea5", lw=1))
-ax.annotate(r"$N(60)=116$", xy=(60, 116), xytext=(26, 420), fontsize=9, color="#555555",
-            arrowprops=dict(arrowstyle="->", color="#555555", lw=0.9))
-ax.annotate(r"$N(61)=25$", xy=(61, 25), xytext=(88, 6.5), fontsize=9, color="#555555",
-            arrowprops=dict(arrowstyle="->", color="#555555", lw=0.9))
+ax.annotate(r"$N(240)=1781$", xy=(240, 1781), xytext=(120, 5600), fontsize=7.5,
+            arrowprops=dict(arrowstyle="->", lw=0.6))
+ax.annotate(r"$N(60)=116$", xy=(60, 116), xytext=(20, 500), fontsize=7.5,
+            arrowprops=dict(arrowstyle="->", lw=0.6))
+ax.annotate(r"$N(61)=25$", xy=(61, 25), xytext=(95, 5.0), fontsize=7.5,
+            arrowprops=dict(arrowstyle="->", lw=0.6))
 
 ax.xaxis.set_major_locator(FixedLocator([2**k for k in range(1, 9)]))
 ax.set_xticklabels([r"$2^{%d}$" % k for k in range(1, 9)])
@@ -121,13 +145,10 @@ ax.yaxis.set_major_locator(FixedLocator([2**k for k in range(0, 15, 2)]))
 ax.set_yticklabels([r"$2^{%d}$" % k for k in range(0, 15, 2)])
 ax.yaxis.set_minor_formatter(NullFormatter())
 ax.set_xlim(1.8, 330); ax.set_ylim(0.8, 2**14)
-ax.grid(which="major", color="#eeeeee", lw=0.9, zorder=0)
-ax.set_xlabel(r"order $n$"); ax.set_ylabel(r"number of Toeplitz trees of order $n$")
-ax.legend(frameon=False, loc="upper left", fontsize=10)
+ax.grid(which="major", color="0.93", lw=0.6, zorder=0)
+ax.set_xlabel(r"order $n$"); ax.set_ylabel(r"$N(n)$")
+ax.legend(frameon=False, loc="upper left", fontsize=8, handlelength=1.6)
 for s in ("top", "right"): ax.spines[s].set_visible(False)
-fig.tight_layout()
-fig.savefig(os.path.join(HERE, "toeplitz_tree_census.png"), dpi=165)
-
-slope = np.log2(run[-1] / run[0]) / np.log2(ns[-1] / ns[0])
-print("running-max slope in base-2 log-log over the plotted range:", round(float(slope), 3))
-print("local slope 128->256:", round(float(np.log2(max(N[n] for n in range(2,257)) / max(N[n] for n in range(2,129))) / 1.0), 3))
+fig.tight_layout(pad=0.4)
+fig.savefig(os.path.join(HERE, "toeplitz_tree_census.png"), dpi=300)
+print("wrote fig-census.pdf")
