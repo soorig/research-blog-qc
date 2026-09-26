@@ -7,7 +7,9 @@ This blog is for writing contents about mathematical computing and physics in th
 
 ## About me
 
-I am **Musung Kang** (강무성), a Ph.D. candidate (post-coursework) at the **Department of Mathematical Sciences, Seoul National University**. My research lives at the intersection of **quantum computing**, **combinatorics**, and **applied category theory**, with side interests in algebraic topology and operator algebras.
+I am **Musung Kang** (강무성), a researcher in discrete mathematics and mathematical physics, a Ph.D. candidate at the **Department of Mathematical Sciences, Seoul National University**, advised by **Woong Kook**.
+
+My research interests include **discrete harmonic analysis**, **spectral graph theory**, and **continuous-time quantum walks**. I study algebraic structures of graphs, with particular interest in adjacency matrices and convex geometry. My recent work has been strongly influenced by Chris Godsil's approach to algebraic combinatorics and quantum walks.
 
 ## Affiliation and funding
 
@@ -19,7 +21,7 @@ I am supported by the **Hyunsong Foundation Scholarship** (5-year graduate schol
 
 ## Talks
 
-- **May 7, 2026** — 
+- **May 7, 2026** — Hyunsong Foundation Scholar Presentation, on average mixing and spanning-tree counts for quantum walks on line graphs. See [[quantum/preprint-preview/preprint-index|the companion post]].
 
 ## Three working principles
 
@@ -35,7 +37,15 @@ These three together are what this blog is trying to do — proofs and pictures 
 
 ## Preprints
 
-My preprints will appear on **[arXiv](https://arxiv.org/)** as they are completed. The author page link will be added here once the first paper is posted; I am currently double-checking proofs before submission.
+- **[arXiv:2609.14463](https://arxiv.org/abs/2609.14463)** — *Arithmetic of Bohr Frequencies Governs Uniform Mixing in Randomly Timed Quantum Spin Chains* (quant-ph, September 2026). When does randomizing the readout time make the site populations of a uniformly coupled XY chain exactly uniform? Companion post, [[quantum/average-mixing-paths/index|uniform average mixing on paths]].
+- **[arXiv:2607.25490](https://arxiv.org/abs/2607.25490)** — *An Exact Obstruction to Uniform Average Mixing on $P_{11}$* (math.CO, July 2026). An explicit rational separating certificate, settling the first case in the negative.
+
+Both are listed on my ORCID record, [0009-0005-7509-4704](https://orcid.org/0009-0005-7509-4704), under the publishing name Musung Kang.
+
+## Under review
+
+- *Continuous-time quantum walks and sedentariness on glued-clique graphs.* Preview post, [[quantum/glued-clique-sedentariness/index|sedentariness on glued cliques]].
+- A mathematics-facing version of the uniform average mixing classification for paths.
 
 ## Contact
 
